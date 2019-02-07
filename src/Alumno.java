@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Alumno {
 
     private static int MAX = 5;
@@ -8,6 +10,8 @@ public class Alumno {
     private double calificacion;
     private String[] asignaturas;
     private int numAsig;
+
+
 
     public Alumno() {
 
@@ -97,4 +101,15 @@ public class Alumno {
         }
     }
 
+ /*   @Override
+    public String toString() {
+        return "Alumno{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", matricula='" + matricula + '\'' +
+                ", calificacion=" + calificacion +
+                ", asignaturas=" + Arrays.toString(asignaturas) +
+                ", numAsig=" + numAsig +
+                '}';
+    } */
 }
