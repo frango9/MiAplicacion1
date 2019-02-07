@@ -1,15 +1,15 @@
 public class Alumno {
 
-    static int MAX = 5;
+    private static int MAX = 5;
 
-    private  String nombre
-    private String apellido
+    private String nombre;
+    private String apellido;
     private String matricula;
     private double calificacion;
     private String[] asignaturas;
     private int numAsig;
 
-    public Alumno(){
+    public Alumno() {
 
         nombre = "";
         apellido = "";
@@ -19,7 +19,7 @@ public class Alumno {
         numAsig = 0;
     }
 
-    pubic Alumno (String nom, String ape, String mat, double cal){
+    public Alumno(String nom, String ape, String mat, double cal) {
 
         nombre = nom;
         apellido = ape;
@@ -29,12 +29,56 @@ public class Alumno {
         asignaturas = new String[MAX];
     }
 
+    public String getNombre()
+    {
+        return nombre;
+    }
+    public void setNombre(String nombre)
+    {
+        this.nombre = nombre;
+    }
 
-    public static void anadirAsignatura(String asig){
+    public String getApellido()
+    {
+        return apellido;
+    }
+    public void setApellido(String apellido)
+    {
+        this.apellido = apellido;
+    }
+
+    public String getMatricula()
+    {
+        return matricula;
+    }
+    public void setMatricula(String matricula)
+    {
+        this.matricula = matricula;
+    }
+
+    public double getCalificacion()
+    {
+        return calificacion;
+    }
+    public void setCalificacion(int calificacion)
+    {
+        this.calificacion = calificacion;
+    }
+
+    public int getNumAsig()
+    {
+        return numAsig;
+    }
+
+
+
+    public static void anadirAsignatura(String asig) {
 
     }
 
 
-    public static void mostrarAsignaturas()
+    public static void mostrarAsignaturas(){
+
+    }
 
 }
