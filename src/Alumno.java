@@ -64,7 +64,7 @@ public class Alumno {
         return calificacion;
     }
 
-    public void setCalificacion(int calificacion)
+    public void setCalificacion(double calificacion)
     {
         this.calificacion = calificacion;
     }
