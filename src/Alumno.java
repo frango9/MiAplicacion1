@@ -75,8 +75,8 @@ public class Alumno {
     }
 
 
-    public void anadirAsignatura(String asig) {
-        //TODO
+    public void anadirAsignatura(String asig)
+    {
         if(numAsig == MAX){
             System.out.println("No es posible agregar mas asignaturas.");
         }
@@ -86,8 +86,15 @@ public class Alumno {
     }
 
 
-    public void mostrarAsignaturas() {
-        //TODO
+    public void mostrarAsignaturas()
+    {
+        if(numAsig == 0)
+            System.out.println("Sin asignaturas.");
+        else{
+            for (int i = 0; i < numAsig; i++) {
+                System.out.println(asignaturas[i]);
+            }
+        }
     }
 
 }
