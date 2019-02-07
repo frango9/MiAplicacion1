@@ -14,7 +14,7 @@ public class Alumno {
         nombre = "";
         apellido = "";
         matricula = "";
-        calificacion = 0;
+        calificacion = 0.0;
         asignaturas = new String[MAX];
         numAsig = 0;
     }
@@ -33,6 +33,7 @@ public class Alumno {
     {
         return nombre;
     }
+
     public void setNombre(String nombre)
     {
         this.nombre = nombre;
@@ -42,6 +43,7 @@ public class Alumno {
     {
         return apellido;
     }
+
     public void setApellido(String apellido)
     {
         this.apellido = apellido;
@@ -51,6 +53,7 @@ public class Alumno {
     {
         return matricula;
     }
+
     public void setMatricula(String matricula)
     {
         this.matricula = matricula;
@@ -60,6 +63,7 @@ public class Alumno {
     {
         return calificacion;
     }
+
     public void setCalificacion(int calificacion)
     {
         this.calificacion = calificacion;
@@ -71,14 +75,19 @@ public class Alumno {
     }
 
 
-
-    public static void anadirAsignatura(String asig) {
-
+    public void anadirAsignatura(String asig) {
+        //TODO
+        if(numAsig == MAX){
+            System.out.println("No es posible agregar mas asignaturas.");
+        }
+        else{
+            asignaturas[numAsig++] = asig;
+        }
     }
 
 
-    public static void mostrarAsignaturas(){
-
+    public void mostrarAsignaturas() {
+        //TODO
     }
 
 }
