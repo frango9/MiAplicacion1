@@ -4,8 +4,8 @@ public class Alumno {
 
     private static int MAX = 5;
 
-    private String nombre;
-    private String apellido;
+    public String nombre;
+    public String apellido;
     private String matricula;
     private double calificacion;
     private String[] asignaturas;

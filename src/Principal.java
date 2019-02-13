@@ -2,10 +2,14 @@ public class Principal {
 
     public static void main(String[] args) {
 
+
+        GrupoAlumnos g1 = new GrupoAlumnos(20,"G1");
+
         Alumno a0 = new Alumno();
         Alumno a1 = new Alumno("Manuel","Garcia Sacedon","ax0074",8.35);
         Alumno a2 = new Alumno("Margarita","Lopez Medina","mj7726",7.70);
         Alumno a3 = new Alumno("Estela","Sanchez Arellano","bc2658",6.75);
+        Alumno a4 = new Alumno("Francisco", "Gomez Prieto","bp0418",7.71);
 
         a0.setNombre("Felipe");
         a0.setApellido("Arias Gonzalez");
@@ -14,6 +18,9 @@ public class Principal {
 
         a3.anadirAsignatura("Estructura de datos");
         a3.anadirAsignatura("Taller de sistemas");
+
+        a4.anadirAsignatura("Fundamentos fisicos");
+        a4.anadirAsignatura("Estructura de datos");
 
         System.out.println("Asignaturas del primer alumno: ");
         a0.mostrarAsignaturas();
