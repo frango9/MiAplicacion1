@@ -44,15 +44,20 @@ public class GrupoAlumnos {
     }
 
     public Alumno alumnoPos(int i){
-        //TODO
 
-        return null;
+        return listaAlum[i];
     }
 
     public boolean insertarAlumno(Alumno a){
-        //TODO
 
-        return false;
+        if(numAlum < maximo){
+            listaAlum[numAlum]= a;
+            numAlum++;
+
+            return true;
+        }
+
+        else return false;
     }
 
     public void mostrarGrupo(){
@@ -60,19 +65,18 @@ public class GrupoAlumnos {
         System.out.println(nombreGrupo);
 
         for (int i = 0; i < maximo ; i++) {
-            System.out.println( nombre + apellido );
+            System.out.println(listaAlum[i]);
         }
 
     }
 
-    public double mediaCalif(){
-        double media;
+    /*public double mediaCalif(){
+
 
         for (int i = 0; i < numAlum; i++) {
             
         }
-        
-        return media;
-    }
+
+    }*/
 
 }

@@ -22,11 +22,19 @@ public class Principal {
         a4.anadirAsignatura("Fundamentos fisicos");
         a4.anadirAsignatura("Estructura de datos");
 
+        g1.insertarAlumno(a0);
+        g1.insertarAlumno(a1);
+        g1.insertarAlumno(a2);
+        g1.insertarAlumno(a3);
+        g1.insertarAlumno(a4);
+
         System.out.println("Asignaturas del primer alumno: ");
         a0.mostrarAsignaturas();
 
         System.out.println("Asignaturas del ultimo alumno: ");
         a3.mostrarAsignaturas();
+
+        g1.mostrarGrupo();
 
     }
 
