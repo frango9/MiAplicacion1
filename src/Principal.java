@@ -9,7 +9,7 @@ public class Principal {
         Alumno a1 = new Alumno("Manuel","Garcia Sacedon","ax0074",8.35);
         Alumno a2 = new Alumno("Margarita","Lopez Medina","mj7726",7.70);
         Alumno a3 = new Alumno("Estela","Sanchez Arellano","bc2658",6.75);
-        Alumno a4 = new Alumno("Francisco", "Gomez Prieto","bp0418",7.71);
+        Alumno a4 = new Alumno("Francisco", "Gomez Prieto","bp0418",9.71);
 
         a0.setNombre("Felipe");
         a0.setApellido("Arias Gonzalez");
@@ -28,13 +28,21 @@ public class Principal {
         g1.insertarAlumno(a3);
         g1.insertarAlumno(a4);
 
+        System.out.println("\n**************************************************************\n");
+
         System.out.println("Asignaturas del primer alumno: ");
         a0.mostrarAsignaturas();
 
         System.out.println("Asignaturas del ultimo alumno: ");
         a3.mostrarAsignaturas();
 
+        System.out.println("\n***************************************************************\n");
+
         g1.mostrarGrupo();
+
+        g1.mediaCalif();
+
+        g1.maxCalif();
 
     }
 

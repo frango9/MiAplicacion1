@@ -61,22 +61,42 @@ public class GrupoAlumnos {
     }
 
     public void mostrarGrupo(){
-        //TODO
-        System.out.println(nombreGrupo);
 
-        for (int i = 0; i < maximo ; i++) {
-            System.out.println(listaAlum[i]);
+        System.out.println("Grupo: " + getnombreGrupo() + "\n \nAlumnos:" );
+
+        for (int i = 0; i < numAlum ; i++) {
+            listaAlum[i].mostrarAlumno();
         }
 
     }
 
-    /*public double mediaCalif(){
+    public double mediaCalif(){
 
+        double media =0;
 
         for (int i = 0; i < numAlum; i++) {
-            
+            media += listaAlum[i].getCalificacion();
         }
 
-    }*/
+        media = media / numAlum;
+
+        return media;
+
+    }
+
+    public void maxCalif(){
+
+        int z = 0;
+
+        for (int i = 0; i < numAlum; i++) {
+            if(listaAlum[i].getCalificacion() > listaAlum[z].getCalificacion()){
+                z = i;
+            }
+        }
+        System.out.println("El alumno con mejor calificacion es:");
+        listaAlum[z].mostrarAlumno();
+    }
+
+
 
 }

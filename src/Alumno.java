@@ -80,14 +80,21 @@ public class Alumno {
 
     public void mostrarAsignaturas() {
         if (numAsig == 0)
-            System.out.println("Sin asignaturas.");
+            System.out.println("\t Sin asignaturas.");
         else {
             for (int i = 0; i < numAsig; i++) {
-                System.out.println(asignaturas[i]);
+                System.out.println("\t-" + asignaturas[i]);
             }
         }
     }
 
+    void mostrarAlumno(){
+        System.out.println(getApellido() + ", " + getNombre() + ". Matr: " + getMatricula() + " (" + getCalificacion() + ")");
+
+        mostrarAsignaturas();
+    }
+
+    /*
     @Override
     public String toString() {
         return "Alumno{" +
@@ -99,4 +106,5 @@ public class Alumno {
                 ", numAsig=" + numAsig +
                 '}';
     }
+    */
 }
