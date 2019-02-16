@@ -93,7 +93,7 @@ public class GrupoAlumnos {
                 z = i;
             }
         }
-        System.out.println("El alumno con mejor calificacion es:");
+        System.out.println("·El alumno con mejor calificacion es:");
         listaAlum[z].mostrarAlumno();
     }
 

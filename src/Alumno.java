@@ -92,6 +92,7 @@ public class Alumno {
         System.out.println(getApellido() + ", " + getNombre() + ". Matr: " + getMatricula() + " (" + getCalificacion() + ")");
 
         mostrarAsignaturas();
+        System.out.println();
     }
 
     /*

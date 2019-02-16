@@ -40,7 +40,7 @@ public class Principal {
 
         g1.mostrarGrupo();
 
-        g1.mediaCalif();
+        System.out.println("·La mediad del grupo es: " + g1.mediaCalif());
 
         g1.maxCalif();
 
